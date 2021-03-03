@@ -1,0 +1,7 @@
+{
+    "code-runner.executorMap": {
+
+        "javascript": "node",
+        "typescript": "node_modules/.bin/ts-node-dev",
+    }
+}
