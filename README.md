@@ -14,21 +14,21 @@ npm init -y
 ```
 instalação do typescript como dependência de desenvolvimento:
 ```bash
-npm install typescript --save-dev
+npm i -D typescript
 ```
 criar o tsconfig.json
 ```bash
-node_modules/,bin/tsc --init
+npx tsc --init
 ```
 criar o diretório src e o arquivo server.ts
 ```bash
-mdir src
+mkdir src
 touch src/server.ts
 ```
 para o exemplo instalar o express e as tipagens para o express
 ```bash
-npm install express
-npm install @types/express --save-dev
+npm i express
+npm i -D @types/express
 ```
 instalar o ts-node-dev
 
@@ -37,7 +37,7 @@ ts-node-dev:
 - node => executa o código
 - nodemon => observa o código
 ```bash
-npm install ts-node-dev --save-dev
+npm i -D ts-node-dev
 ```
 
 criar o script para executar com o ts-node-dev o ```server.ts```
@@ -88,7 +88,7 @@ configuração do tsconfig.json
 
 instalar o tsconfig-paths para que o ts-node-dev entenda os atalhos @ para os paths.
 ```bash
-npm install tsconfig-paths --save-dev
+npm i -D tsconfig-paths
 ```
 E adicionar no script a flag -r tsconfig-paths/register
 
@@ -99,11 +99,11 @@ ___
 instalar o ESLint
 
 ```bash
-npm install eslint --save-dev
+npm i -D eslint
 ```
 Iniciar o ESLint
 ```bash
-node_modules/.bin/eslint --init
+npx eslint --init
 ```
 
 Criar .eslintignore e adicionar os diretórios dist e node_modules
